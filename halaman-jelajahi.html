@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelajahi SMADABA</title>
+    
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #020738;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            margin-top: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #fff; /* Mengubah warna teks menjadi putih */
+        }
+        p {
+            font-size: 1.2rem;
+            margin: 20px;
+        }
+        /* Kolom dengan background gambar */
+        .section-link {
+            display: block;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            width: 80%;
+            text-decoration: none;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .section-link::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Overlay hitam transparan di atas gambar */
+            z-index: 0;
+        }
+        .section-link h2, .section-link p {
+            position: relative;
+            z-index: 1;
+        }
+        h2 {
+            color: #fff;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        /* Styling untuk header */
+        header {
+            background-color: #6a1b9a;
+            color: white;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        header .logo {
+            margin-right: 20px;
+            width: 75px; /* Sesuaikan ukuran gambar */
+            height: 75px;
+            position: absolute;
+            left: 10px; /* Menggeser lebih ke kiri */
+            top: 10px; /* Geser logo lebih ke atas */
+        }
+        header div {
+            margin-left: 70px; /* Tambahkan margin untuk memberi ruang pada teks */
+        }
+        header h1 {
+            margin: 0;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- Membuat gambar logo bisa diklik dan mengarah ke Instagram -->
+        <a href="https://www.instagram.com/smanegeri2bantul?igsh=Z3l4MWV3Yzc4dWxt" target="_blank">
+            <img src="./image/smadabatransparan.jpg" alt="Logo SMADABA" class="logo">
+        </a>
+        <div>
+            <h1>Jelajahi SMADABA</h1>
+            <p>Di halaman ini, kamu dapat melihat informasi mengenai prestasi, kegiatan, dan berbagai event di SMADABA.</p>
+        </div>
+    </header>
+
+    <div class="container">
+        
+         <!-- Prestasi Sekolah -->
+         <a href="profil.html" class="section-link" style="background-image: url('./image/sma\ 2\ bantul.jpg');">
+            <h2>Profil</h2>
+            <p>Berbagai penghargaan yang diraih oleh SMADABA di berbagai bidang.</p>
+        </a>
+
+        <!-- Prestasi Sekolah -->
+        <a href="prestasi.html" class="section-link" style="background-image: url('./image/piala.jpg');">
+            <h2>Prestasi Sekolah</h2>
+            <p>Berbagai penghargaan yang diraih oleh siswa-siswi SMADABA di berbagai bidang tahun 2024</p>
+        </a>
+    
+        <!-- Event Sekolah -->
+        <a href="event.html" class="section-link" style="background-image: url('./image/piala.jpg');">
+            <h2>Event Sekolah</h2>
+            <p>Daftar event dan kegiatan yang sedang berlangsung di SMADABA.</p>
+        </a>
+
+        <!-- Fasilitas Sekolah -->
+        <a href="fasilitas.html" class="section-link" style="background-image: url('gambar-event.jpg');">
+            <h2>Fasilitas Sekolah</h2>
+            <p>Fasilitas yang sedang berlangsung di SMADABA.</p>
+        </a>
+
+        <!-- Organisasi -->
+        <a href="organisasi.html" class="section-link" style="background-image: url('./image/pelantikanosis.jpg');">
+            <h2>Organisasi</h2>
+            <p>Daftar event dan kegiatan yang sedang berlangsung di SMADABA.</p>
+        </a>
+
+        <!-- Ekstrakurikuler -->
+        <a href="ekstrakurikuler.html" class="section-link" style="background-image: url('gambar-event.jpg');">
+            <h2>Ekstrakurikuler</h2>
+            <p>Daftar event dan kegiatan yang sedang berlangsung di SMADABA.</p>
+        </a>
+        
+        <a href="index.html" style="display: inline-block; margin-top: 20px; background-color: #6a1b9a; color: #fff; padding: 10px 20px; border-radius: 25px; text-decoration: none;">Kembali ke Halaman Utama</a>
+    </div>
+
+</body>
+</html>
